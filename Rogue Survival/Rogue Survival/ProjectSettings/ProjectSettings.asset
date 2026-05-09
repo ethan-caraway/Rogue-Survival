@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 6e1c2822a6d3dc74fa2601080fc01a7b
+  productGUID: 0dcea0e8e8ff1e941a1bea7a2d0bf59f
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -680,10 +680,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: cd0924f5-a4a5-4396-84b0-9cde130c5855
+  cloudProjectId: bfabdc97-07a5-4b11-9861-48d4a1dc4b9c
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Rogue Survival
+  projectName: Rogue Survival 2026-05-09_17-05-35
   organizationId: flightpaperstudio
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

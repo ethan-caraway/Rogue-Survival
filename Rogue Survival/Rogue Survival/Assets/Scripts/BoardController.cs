@@ -3,16 +3,13 @@ using UnityEngine.Tilemaps;
 
 public class BoardController : MonoBehaviour
 {
-	// A class for storing data for each cell in the board
-	private class CellData
-	{
-		// Whether or not the play can move to the cell in the board
-		public bool IsPassable;
-	}
-
 	// The tilemap for the board
 	[SerializeField]
 	private Tilemap tilemap;
+
+	// The grid for the board
+	[SerializeField]
+	private Grid grid;
 
 	// The width and height of the board
 	[SerializeField]
@@ -26,16 +23,20 @@ public class BoardController : MonoBehaviour
 	[SerializeField]
 	private Tile [ ] wallTiles;
 
+	// The player on the board
+	[SerializeField]
+	private PlayerController player;
+
 	// The data for each cell in the board
 	private CellData [ , ] boardData;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
+	// Start is called once before the first execution of Update after the MonoBehaviour is created
+	private void Start ( )
+	{
 		// Create a 2D array of cell data
 		boardData = new CellData [ dimensions.x, dimensions.y ];
 
-        // Navigate each row of the board
+		// Navigate each row of the board
 		for ( int y = 0; y < dimensions.y; y++ )
 		{
 			// Navigate each column of the board
@@ -51,7 +52,10 @@ public class BoardController : MonoBehaviour
 					tile = wallTiles [ Random.Range ( 0, wallTiles.Length ) ];
 
 					// Prevent the player from moving to this cell
-					boardData [ x, y ].IsPassable = false;
+					boardData [ x, y ] = new CellData
+					{
+						IsPassable = false
+					};
 				}
 				else
 				{
@@ -59,18 +63,31 @@ public class BoardController : MonoBehaviour
 					tile = groundTiles [ Random.Range ( 0, groundTiles.Length ) ];
 
 					// Allow the player to move to this cell
-					boardData [ x, y ].IsPassable = true;
+					boardData [ x, y ] = new CellData
+					{
+						IsPassable = true
+					};
 				}
 
 				// Paint the tile map with the random tile
 				tilemap.SetTile ( new Vector3Int ( x, y, 0 ), tile );
 			}
 		}
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+		// Place the player in its starting cell in the bottom left corner
+		player.Spawn ( this, new Vector2Int ( 1, 1 ) );
+	}
+
+	// Update is called once per frame
+	void Update ( )
+	{
+
+	}
+
+	// GetCellPosition is used to get the world space position of a cell by its coordinates
+	public Vector3 GetCellPosition ( Vector2Int cell )
+	{
+		// Convert the cell position to world space
+		return tilemap.GetCellCenterWorld ( (Vector3Int)cell );
+	}
 }
