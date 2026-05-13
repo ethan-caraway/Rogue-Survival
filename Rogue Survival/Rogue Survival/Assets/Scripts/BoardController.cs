@@ -23,15 +23,11 @@ public class BoardController : MonoBehaviour
 	[SerializeField]
 	private Tile [ ] wallTiles;
 
-	// The player on the board
-	[SerializeField]
-	private PlayerController player;
-
 	// The data for each cell in the board
 	private CellData [ , ] boardData;
 
-	// Start is called once before the first execution of Update after the MonoBehaviour is created
-	private void Start ( )
+	// Init is called to initialize the board
+	public void Init ( )
 	{
 		// Create a 2D array of cell data
 		boardData = new CellData [ dimensions.x, dimensions.y ];
@@ -73,9 +69,6 @@ public class BoardController : MonoBehaviour
 				tilemap.SetTile ( new Vector3Int ( x, y, 0 ), tile );
 			}
 		}
-
-		// Place the player in its starting cell in the bottom left corner
-		player.Spawn ( this, new Vector2Int ( 1, 1 ) );
 	}
 
 	// Update is called once per frame
@@ -89,5 +82,19 @@ public class BoardController : MonoBehaviour
 	{
 		// Convert the cell position to world space
 		return tilemap.GetCellCenterWorld ( (Vector3Int)cell );
+	}
+
+	// GetCellData is used for retrieving the data of a cell by its coordinates 
+	public CellData GetCellData ( Vector2Int cell )
+	{
+		// Check for valid cell coordinates
+		if ( cell.x < 0 || cell.x >= boardData.GetLength ( 0 ) || cell.y < 0 || cell.y >= boardData.GetLength ( 1 ) )
+		{
+			// Return no data
+			return null;
+		}
+
+		// Return the data for the cell
+		return boardData [ cell.x, cell.y ];
 	}
 }
