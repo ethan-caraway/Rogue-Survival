@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
 	[SerializeField]
 	private PlayerInput playerInput;
 
+	// The stats for the player
+	public static PlayerData Stats;
+
 	// The controller for the board
 	private BoardController board;
 
@@ -47,7 +50,14 @@ public class PlayerController : MonoBehaviour
 		// Store the reference to the board
 		board = boardController;
 
-		// Store the starting position
+		// Move the player to the starting coordinates
+		MoveToCell ( cell );
+	}
+
+	// MoveToCell is called to position the player to a given cell
+	private void MoveToCell ( Vector2Int cell )
+	{
+		// Store the cell coordinates
 		cellPosition = cell;
 
 		// Position player to the cell
@@ -66,14 +76,44 @@ public class PlayerController : MonoBehaviour
 		// Check if the cell can be moved to
 		if ( cellData != null && cellData.IsPassable )
 		{
-			// Store the new cell coordinates
-			cellPosition += moveInput;
-
 			// Move the player to the new cell
-			transform.position = board.GetCellPosition ( cellPosition );
+			MoveToCell ( cellPosition + moveInput );
+
+			// Check for an object in the cell
+			if ( cellData.ContainedObject != null )
+			{
+				// Trigger the player entering the cell of the object
+				cellData.ContainedObject.PlayerEntered ( );
+			}
+
+			// Use up some speed energy for the move
+			ConsumeSpeed ( );
 
 			// Increment the turn
 			mediator.Turn.Tick ( );
 		}
+	}
+
+	// ConsumeSpeed is called each move to consume some of the player's current speed energy
+	private void ConsumeSpeed ( )
+	{
+		// Decrement the player's current speed energy
+		Stats.CurrentSpeed--;
+
+		// Check if all of the player's current speed energy as been consumed
+		if ( Stats.CurrentSpeed <= 0 )
+		{
+			// Reset the player's current speed energy
+			Stats.CurrentSpeed = Stats.MaxSpeed;
+
+			// Decrement the player's current health
+			Stats.CurrentHealth--;
+		}
+
+		// Ensure the player's current speed energy is within the correct range
+		Stats.CurrentSpeed = Mathf.Min ( Stats.CurrentSpeed, Stats.MaxSpeed );
+
+		// Ensure the player's current health is within the correct range
+		Stats.CurrentHealth = Mathf.Clamp ( Stats.CurrentHealth, 0, Stats.MaxHealth );
 	}
 }

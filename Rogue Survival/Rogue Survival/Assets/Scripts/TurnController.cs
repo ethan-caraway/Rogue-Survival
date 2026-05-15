@@ -1,19 +1,13 @@
 public class TurnController
 {
+	// A delegate that takes an integer for the current turn as a parameter
+	public delegate void TickHandler ( int turn );
+
 	// Event for when a tick occurs
-	public event System.Action OnTick;
+	public event TickHandler OnTick;
 
 	// The current turn of the game
 	private int currentTurn = 1;
-
-	// The read-only property of the current turn of the game
-	public int CurrentTurn
-	{
-		get
-		{
-			return currentTurn;
-		}
-	}
 
 	// Tick is called to increment the current turn
 	public void Tick ( )
@@ -25,7 +19,7 @@ public class TurnController
 		if ( OnTick != null )
 		{
 			// Trigger the event
-			OnTick ( );
+			OnTick ( currentTurn );
 		}
 	}
 }

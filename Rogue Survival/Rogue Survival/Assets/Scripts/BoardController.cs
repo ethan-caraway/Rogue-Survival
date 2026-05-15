@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -23,14 +24,28 @@ public class BoardController : MonoBehaviour
 	[SerializeField]
 	private Tile [ ] wallTiles;
 
+	// The list of prefabs of food to spawn on the board
+	[SerializeField]
+	private FoodObject [ ] foodPrefabs;
+
+	// The amount of food to spawn on the board
+	[SerializeField]
+	private int foodCount;
+
 	// The data for each cell in the board
 	private CellData [ , ] boardData;
+
+	// The list of empty cells during generation
+	private List<Vector2Int> emptyCells = new List<Vector2Int> ( );
 
 	// Init is called to initialize the board
 	public void Init ( )
 	{
 		// Create a 2D array of cell data
 		boardData = new CellData [ dimensions.x, dimensions.y ];
+
+		// Clear any previous cells
+		emptyCells.Clear ( );
 
 		// Navigate each row of the board
 		for ( int y = 0; y < dimensions.y; y++ )
@@ -63,12 +78,21 @@ public class BoardController : MonoBehaviour
 					{
 						IsPassable = true
 					};
+
+					// Mark the cell as empty
+					emptyCells.Add ( new Vector2Int ( x, y ) );
 				}
 
 				// Paint the tile map with the random tile
 				tilemap.SetTile ( new Vector3Int ( x, y, 0 ), tile );
 			}
 		}
+
+		// Remove the spawn position for the player
+		emptyCells.Remove ( new Vector2Int ( 1, 1 ) );
+
+		// Populate the board with food
+		GenerateFood ( );
 	}
 
 	// Update is called once per frame
@@ -96,5 +120,35 @@ public class BoardController : MonoBehaviour
 
 		// Return the data for the cell
 		return boardData [ cell.x, cell.y ];
+	}
+
+	// GenerateFood is used to procedurally generate food items on the board
+	private void GenerateFood ( )
+	{
+		// Generate the total amount of food
+		for ( int i = 0; i < foodCount; i++ )
+		{
+			// Check for empty cells
+			if ( emptyCells.Count < 1 )
+			{
+				// End generation
+				return;
+			}
+
+			// Get random coordinates
+			Vector2Int coordinates = emptyCells [ Random.Range ( 0, emptyCells.Count ) ];
+
+			// Remove coordinates from the list of available cells
+			emptyCells.Remove ( coordinates );
+
+			// Get random food prefab
+			FoodObject prefab = foodPrefabs [ Random.Range ( 0, foodPrefabs.Length ) ];
+
+			// Spawn an instance of the food at the cell coordinates
+			FoodObject food = Instantiate ( prefab, GetCellPosition ( coordinates ), Quaternion.identity );
+
+			// Store the food in the cell data
+			boardData [ coordinates.x, coordinates.y ].ContainedObject = food;
+		}
 	}
 }

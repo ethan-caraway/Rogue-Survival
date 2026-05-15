@@ -30,6 +30,13 @@ public class GameMediator : MonoBehaviour
 		// Create the board
 		board.Init ( );
 
+		// Check for player stats
+		if ( PlayerController.Stats == null )
+		{
+			// Set default player stats
+			PlayerController.Stats = new PlayerData ( 50, 3 );
+		}
+
 		// Place the player in its starting cell in the bottom left corner
 		player.Spawn ( board, new Vector2Int ( 1, 1 ) );
 
