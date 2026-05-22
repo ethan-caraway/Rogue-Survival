@@ -8,7 +8,7 @@ public class FoodObject : CellObject
 	[SerializeField]
 	private int speedGain;
 
-	// FoodObject.PlayerEntered is called when the player enters a cell with food in it.
+	// FoodObject.PlayerEntered is called when the player enters a cell with food in it
 	public override void PlayerEntered ( )
 	{
 		// Gain health for the player

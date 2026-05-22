@@ -76,12 +76,18 @@ public class PlayerController : MonoBehaviour
 		// Check if the cell can be moved to
 		if ( cellData != null && cellData.IsPassable )
 		{
-			// Move the player to the new cell
-			MoveToCell ( cellPosition + moveInput );
-
 			// Check for an object in the cell
-			if ( cellData.ContainedObject != null )
+			if ( cellData.ContainedObject == null )
 			{
+				// Move the player to the new cell
+				MoveToCell ( cellPosition + moveInput );
+			}
+			// Check if the player is allowed to move to the cell with an object
+			else if ( cellData.ContainedObject.CanPlayerEnter ( ) )
+			{
+				// Move the player to the new cell
+				MoveToCell ( cellPosition + moveInput );
+
 				// Trigger the player entering the cell of the object
 				cellData.ContainedObject.PlayerEntered ( );
 			}

@@ -11,24 +11,27 @@ public class HudController : MonoBehaviour
 	[SerializeField]
 	private TMP_Text turnText;
 
+	// The text element for displaying the player's health stat
 	[SerializeField]
 	private TMP_Text healthText;
 
+	// The text element for displaying the player's speed stat
 	[SerializeField]
 	private TMP_Text speedText;
+
+	// The text element for displaying the player's attack stat
+	[SerializeField]
+	private TMP_Text attackText;
 
 	// Init is called to initialize the HUD
 	public void Init ( )
 	{
-		// Display the turn in the HUD
-		UpdateHUD ( 1 );
-
 		// Subscribe to the OnTick event
 		mediator.Turn.OnTick += UpdateHUD;
 	}
 
 	// UpdateHUD is called to update the turn display in the HUD
-	private void UpdateHUD ( int turn )
+	public void UpdateHUD ( int turn )
 	{
 		// Display the current turn
 		turnText.text = $"Turn {turn}";
@@ -45,5 +48,8 @@ public class HudController : MonoBehaviour
 
 		// Display the player's current speed energy
 		speedText.text = $"{PlayerController.Stats.CurrentSpeed}/{PlayerController.Stats.MaxSpeed}";
+
+		// Display the player's current attack
+		attackText.text = PlayerController.Stats.Attack.ToString ( );
 	}
 }

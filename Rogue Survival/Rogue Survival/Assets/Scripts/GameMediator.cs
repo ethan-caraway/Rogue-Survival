@@ -14,6 +14,13 @@ public class GameMediator : MonoBehaviour
 	[SerializeField]
 	private HudController hud;
 
+	// The current level that the player is on
+	public static int CurrentLevel
+	{
+		get;
+		private set;
+	}
+
 	// The controller for the turns
 	public TurnController Turn
 	{
@@ -21,32 +28,45 @@ public class GameMediator : MonoBehaviour
 		private set;
 	}
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
+	// Start is called once before the first execution of Update after the MonoBehaviour is created
+	private void Start ( )
+	{
 		// Create the turn controller
 		Turn = new TurnController ( );
 
-		// Create the board
-		board.Init ( );
+		// Subscribe to the level completion event
+		Turn.OnLevelComplete += NewLevel;
 
 		// Check for player stats
 		if ( PlayerController.Stats == null )
 		{
 			// Set default player stats
-			PlayerController.Stats = new PlayerData ( 50, 3 );
+			PlayerController.Stats = new PlayerData ( 50, 3, 10 );
 		}
 
-		// Place the player in its starting cell in the bottom left corner
-		player.Spawn ( board, new Vector2Int ( 1, 1 ) );
+		// Start the level
+		NewLevel ( );
 
 		// Initialize the HUD
 		hud.Init ( );
 	}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	// NewLevel is called when a new level needs to be procedurally generated
+	private void NewLevel ( )
+	{
+		// Increment level
+		CurrentLevel++;
+
+		// Reset the turns
+		hud.UpdateHUD ( 1 );
+
+		// Clear previous board
+		board.Clean ( );
+
+		// Create the board
+		board.Init ( );
+
+		// Place the player in its starting cell in the bottom left corner
+		player.Spawn ( board, new Vector2Int ( 1, 1 ) );
+	}
 }
