@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 79225069422696269}
   - component: {fileID: 1292778943058864447}
   m_Layer: 0
-  m_Name: Obstacle8
+  m_Name: SnowObstacle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c94689d0b9c0fe438d8364a78278f1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleObject
-  obstacleTile: {fileID: 11400000, guid: 364b5df0d4e093f4aa7c03c327757c90, type: 2}
-  damageTile: {fileID: 11400000, guid: fc7dbe959cde11d4ba0eaec753d416d0, type: 2}
-  maxHealth: 35
+  obstacleTile: {fileID: 11400000, guid: d80331c540226a34c87485aaae45a7d5, type: 2}
+  damageTile: {fileID: 11400000, guid: 75abf6f5b0d57e34d95c0f3f293e9298, type: 2}
+  maxHealth: 45

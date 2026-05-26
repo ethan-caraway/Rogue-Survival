@@ -203,31 +203,27 @@ MonoBehaviour:
   grid: {fileID: 449649550}
   dimensions: {x: 8, y: 8}
   groundTiles:
-  - {fileID: 11400000, guid: 634ab84e3cbe93c44a34a196ad14dfe1, type: 2}
-  - {fileID: 11400000, guid: d396593ee52c1cb41aa81c1840b0c800, type: 2}
-  - {fileID: 11400000, guid: 623e7f5416c8cda498e0433d48dd538e, type: 2}
-  - {fileID: 11400000, guid: 19a55a63b6ca785458ceef3ced9ea717, type: 2}
-  - {fileID: 11400000, guid: 61ed88fdfe3a5bf46b9e65102253bffb, type: 2}
-  - {fileID: 11400000, guid: afc8ea81904257b4e8ae5245d17a643f, type: 2}
-  - {fileID: 11400000, guid: 6a0f260169534af4297df5b79b932a8f, type: 2}
-  - {fileID: 11400000, guid: 4ffa9f78a17b09b4f979246ad5522933, type: 2}
+  - {fileID: 11400000, guid: d61114955e4db8f47a8bb5ae39229c20, type: 2}
+  - {fileID: 11400000, guid: 7fc50f18db50c4f43be4c88e83820968, type: 2}
+  - {fileID: 11400000, guid: 384e6803acab64d4087d42d8187230b2, type: 2}
+  - {fileID: 11400000, guid: b0c13af488573a6488a94feb50afbb67, type: 2}
+  - {fileID: 11400000, guid: a058e6505482ac34b8e5c923db383bac, type: 2}
+  - {fileID: 11400000, guid: 0581f20c46803b844a4773b7765ca56b, type: 2}
+  - {fileID: 11400000, guid: 873f9ec3cc001ac47a5336b343fcee1d, type: 2}
+  - {fileID: 11400000, guid: 6f3f25514eb9e4947ad8ca384c9ef958, type: 2}
+  - {fileID: 11400000, guid: 1ecaaa2dbb59b9b408e730f890d4f01d, type: 2}
   wallTiles:
-  - {fileID: 11400000, guid: 00b7b31b095a24e4b8d09d1e1006db4b, type: 2}
-  - {fileID: 11400000, guid: c1f6a614ebf2aad4591befd054b1bb10, type: 2}
-  exitPrefab: {fileID: -7229921921157617699, guid: 8cc0ed0656e4a7049a25b8b285c2ec7c, type: 3}
+  - {fileID: 11400000, guid: 8b87b97f9404a314fabe2d80a5cd8a9a, type: 2}
+  - {fileID: 11400000, guid: 57e03445438030e4b9d7ab754ae2cc1b, type: 2}
+  exitPrefab: {fileID: -7229921921157617699, guid: 592190847301d3f44a37d536bc2f65e0, type: 3}
   foodPrefabs:
-  - {fileID: 8234969162708401041, guid: d4631b6e71df49a4383ac4d3966e6ad7, type: 3}
-  - {fileID: 865762075656398647, guid: d17eea8885334a640852281d28026a0a, type: 3}
+  - {fileID: -4241910785097392562, guid: d1bda8055281bf84a86f9e7cd811f212, type: 3}
+  - {fileID: 5930453504622162035, guid: 049a18f1f961f964fa720296048f82dd, type: 3}
   obstaclePrefabs:
-  - {fileID: 1292778943058864447, guid: 47bf57fd5ce596c45996d9bc7ef90ded, type: 3}
-  - {fileID: 1292778943058864447, guid: 99c2d97a4ee8a074bbbf6db1ca467791, type: 3}
-  - {fileID: 1292778943058864447, guid: 2c28d8b21b1dc9f42aed4c00480c0ccd, type: 3}
-  - {fileID: 1292778943058864447, guid: 9f3e954cbcc5cf448adefd75b2adba3a, type: 3}
-  - {fileID: 1292778943058864447, guid: cb2e2e7d01512d045acd7fe114bc1fac, type: 3}
-  - {fileID: 1292778943058864447, guid: bd14d06346f351c47b8c6ab71f24bf77, type: 3}
-  - {fileID: 1292778943058864447, guid: 0545b797acc087041a0555216bf82054, type: 3}
-  - {fileID: 1292778943058864447, guid: 4eb3881d7848adb4e81d141288c3acd5, type: 3}
-  foodCount: 2
+  - {fileID: 1292778943058864447, guid: 0b31b5fdc426da64eb3820ad64875227, type: 3}
+  - {fileID: 1292778943058864447, guid: a64f1ec804cd21340bf999663ffb078d, type: 3}
+  - {fileID: 1292778943058864447, guid: 251dbc9eec8a5ba47a92da57665baa7d, type: 3}
+  foodCount: 1
   minObstacleCount: 4
   maxObstacleCount: 10
 --- !u!1 &519420028

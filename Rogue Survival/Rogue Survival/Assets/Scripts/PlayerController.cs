@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 		// Check for on key down
-		if ( moveAction.WasPressedThisFrame ( ) )
+		if ( mediator.IsGameRunning && moveAction.WasPressedThisFrame ( ) )
 		{
 			// Move the player
 			Move ( moveAction.ReadValue<Vector2> ( ) );
@@ -115,9 +115,6 @@ public class PlayerController : MonoBehaviour
 			// Decrement the player's current health
 			Stats.CurrentHealth--;
 		}
-
-		// Ensure the player's current speed energy is within the correct range
-		Stats.CurrentSpeed = Mathf.Min ( Stats.CurrentSpeed, Stats.MaxSpeed );
 
 		// Ensure the player's current health is within the correct range
 		Stats.CurrentHealth = Mathf.Clamp ( Stats.CurrentHealth, 0, Stats.MaxHealth );

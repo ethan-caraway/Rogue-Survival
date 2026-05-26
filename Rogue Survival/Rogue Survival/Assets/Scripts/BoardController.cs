@@ -165,6 +165,16 @@ public class BoardController : MonoBehaviour
 		tilemap.ClearAllTiles ( );
 	}
 
+	// IncreaseObstacles is used to increase the total amount of obstacles generated
+	public void IncreaseObstacles ( )
+	{
+		// Increment minimum obstacles
+		minObstacleCount++;
+
+		// Increment maximum obstacles
+		maxObstacleCount++;
+	}
+
 	// GetCellPosition is used to get the world space position of a cell by its coordinates
 	public Vector3 GetCellPosition ( Vector2Int cell )
 	{

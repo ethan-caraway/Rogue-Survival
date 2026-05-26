@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 79225069422696269}
   - component: {fileID: 1292778943058864447}
   m_Layer: 0
-  m_Name: Obstacle2
+  m_Name: UrbanObstacle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c94689d0b9c0fe438d8364a78278f1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleObject
-  obstacleTile: {fileID: 11400000, guid: a63ec21fbb85b8f4a84ca743d688ce81, type: 2}
-  damageTile: {fileID: 11400000, guid: 9a59a90d38d168042be9dbfc32802a93, type: 2}
+  obstacleTile: {fileID: 11400000, guid: 85e338274bab74d4bb4f5e8492b78999, type: 2}
+  damageTile: {fileID: 11400000, guid: c5d7f5566c0a5124a9e44ec9b48bec68, type: 2}
   maxHealth: 25

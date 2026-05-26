@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 79225069422696269}
   - component: {fileID: 1292778943058864447}
   m_Layer: 0
-  m_Name: Obstacle6
+  m_Name: SandObstacle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c94689d0b9c0fe438d8364a78278f1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleObject
-  obstacleTile: {fileID: 11400000, guid: 5174af6525bb1bb439fbc4105939947f, type: 2}
-  damageTile: {fileID: 11400000, guid: 5d32776f2cc67234eb9e66b73d9bfa37, type: 2}
-  maxHealth: 30
+  obstacleTile: {fileID: 11400000, guid: 9972722c28785a24eb186f79d4c7bb90, type: 2}
+  damageTile: {fileID: 11400000, guid: a05f4d344a200924e82c77f62e94b9db, type: 2}
+  maxHealth: 20
