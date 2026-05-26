@@ -121,5 +121,23 @@ public class PlayerController : MonoBehaviour
 
 		// Ensure the player's current health is within the correct range
 		Stats.CurrentHealth = Mathf.Clamp ( Stats.CurrentHealth, 0, Stats.MaxHealth );
+
+		// Check for remaining health
+		CheckHealth ( );
+		
+	}
+
+	// CheckHealth is called each turn to check if the player still has health
+	private void CheckHealth ( )
+	{
+		// Check for no remaining health
+		if ( Stats.CurrentHealth <= 0 )
+		{
+			// Mark the game as over
+			mediator.Turn.IsGameOver = true;
+
+			// Delete the player
+			Destroy ( gameObject );
+		}
 	}
 }

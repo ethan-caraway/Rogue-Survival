@@ -12,6 +12,12 @@ public class TurnController
 	// Event for when the player completes the level
 	public event System.Action OnLevelComplete;
 
+	// Whether or not the game is over
+	public bool IsGameOver = false;
+
+	// Event for when the player loses
+	public event System.Action OnGameOver;
+
 	// The current turn of the game
 	private int currentTurn = 1;
 
@@ -28,8 +34,18 @@ public class TurnController
 			OnTick ( currentTurn );
 		}
 
+		// Check if the game is over
+		if ( IsGameOver )
+		{
+			// Check for functions subscribed to the game over event
+			if ( OnGameOver != null )
+			{
+				// Trigger the game over event
+				OnGameOver ( );
+			}
+		}
 		// Check if the level has been completed by the player
-		if ( IsLevelComplete )
+		else if ( IsLevelComplete )
 		{
 			// Reset the level
 			IsLevelComplete = false;

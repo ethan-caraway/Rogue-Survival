@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9160389459458047496}
   - component: {fileID: -7229921921157617699}
   m_Layer: 0
-  m_Name: UrbanRuinsExit
+  m_Name: UrbanExit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

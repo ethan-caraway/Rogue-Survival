@@ -40,8 +40,7 @@ public class GameMediator : MonoBehaviour
 		// Check for player stats
 		if ( PlayerController.Stats == null )
 		{
-			// Set default player stats
-			PlayerController.Stats = new PlayerData ( 50, 3, 10 );
+			ResetRun ( );
 		}
 
 		// Start the level
@@ -49,6 +48,16 @@ public class GameMediator : MonoBehaviour
 
 		// Initialize the HUD
 		hud.Init ( );
+	}
+
+	// ResetRun is called to reset the player and run data
+	public void ResetRun ( )
+	{
+		// Set default player stats
+		PlayerController.Stats = new PlayerData ( 5, 3, 10 );
+
+		// Set the current level
+		CurrentLevel = 0;
 	}
 
 	// NewLevel is called when a new level needs to be procedurally generated
