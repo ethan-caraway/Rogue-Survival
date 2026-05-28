@@ -73,7 +73,6 @@ public class PlayerData
 			// Change the current speed to reflect the change in max speed
 			CurrentSpeed = Mathf.Max ( 1, CurrentSpeed + speedDelta );
 		}
-		CurrentSpeed = Mathf.Min ( CurrentSpeed, MaxSpeed );
 	}
 
 	// ModifyAttack is used to modify the player's current attack stat

@@ -212,13 +212,13 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -291,7 +291,183 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_0
+      name: UrbanTheme_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466bd260303470a478a57655a1d39270
+      internalID: -1172727258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UrbanTheme_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f93b13ce6facfa46b8d884b3f73747f
+      internalID: 141704279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UrbanTheme_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d31f41f783ef44e85838defa8f9512
+      internalID: -1047603973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UrbanTheme_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07f50ddf2b2919428a406d7caeb6674
+      internalID: 647339875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UrbanTheme_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d762a50adc6a1a949a243db6dfc36c0a
+      internalID: -330475852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UrbanTheme_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085708a93c1a24c40b1a12f8dccdb74a
+      internalID: -729741786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UrbanTheme_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df253e8b5ba07194883093375c28907e
+      internalID: 2031567649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UrbanTheme_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7903c3668b1344b96cf0b90e6beb04
+      internalID: -1603296418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UrbanTheme_8
       rect:
         serializedVersion: 2
         x: 0
@@ -299,21 +475,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 02305410000000000800000000000000
-      internalID: 21300000
+      spriteID: 37065b69c2b2c3d439536f8e8445f4ae
+      internalID: 1370273396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_1
+      name: UrbanTheme_9
       rect:
         serializedVersion: 2
         x: 32
@@ -321,21 +497,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 22305410000000000800000000000000
-      internalID: 21300002
+      spriteID: a1fe6ebe668d91c45827fb2d75323072
+      internalID: -978139270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_2
+      name: UrbanTheme_10
       rect:
         serializedVersion: 2
         x: 64
@@ -343,21 +519,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 42305410000000000800000000000000
-      internalID: 21300004
+      spriteID: d68a44da1be45724fa9f7c68a93089b4
+      internalID: 349427601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_3
+      name: UrbanTheme_11
       rect:
         serializedVersion: 2
         x: 96
@@ -365,21 +541,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 62305410000000000800000000000000
-      internalID: 21300006
+      spriteID: e7bae27b45e5f204f88485a11bdb5229
+      internalID: -1051825808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_4
+      name: UrbanTheme_12
       rect:
         serializedVersion: 2
         x: 128
@@ -387,21 +563,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 82305410000000000800000000000000
-      internalID: 21300008
+      spriteID: e3db53f5d434a97448e23298a0e90ec3
+      internalID: 886052069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_5
+      name: UrbanTheme_13
       rect:
         serializedVersion: 2
         x: 160
@@ -409,21 +585,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a2305410000000000800000000000000
-      internalID: 21300010
+      spriteID: 0d6c35de0d27d024dbef0931e7fe8832
+      internalID: -449814489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_6
+      name: UrbanTheme_14
       rect:
         serializedVersion: 2
         x: 192
@@ -431,21 +607,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c2305410000000000800000000000000
-      internalID: 21300012
+      spriteID: a8dd905b358e9fe44b7eb8f83ba0b866
+      internalID: 1978079270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_7
+      name: UrbanTheme_15
       rect:
         serializedVersion: 2
         x: 224
@@ -453,21 +629,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e2305410000000000800000000000000
-      internalID: 21300014
+      spriteID: 48a4c45422905a746bb5e4a9a6e44ad1
+      internalID: 1299396706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_8
+      name: UrbanTheme_16
       rect:
         serializedVersion: 2
         x: 0
@@ -475,21 +651,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 03305410000000000800000000000000
-      internalID: 21300016
+      spriteID: 0ef7d8dd7b6a88d49b750890044922c8
+      internalID: -719778838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_9
+      name: UrbanTheme_17
       rect:
         serializedVersion: 2
         x: 32
@@ -497,21 +673,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 23305410000000000800000000000000
-      internalID: 21300018
+      spriteID: b746c2f9063f913429e2fd4bf159c300
+      internalID: 1095334354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_10
+      name: UrbanTheme_18
       rect:
         serializedVersion: 2
         x: 64
@@ -519,21 +695,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 43305410000000000800000000000000
-      internalID: 21300020
+      spriteID: 0911011fe94fffc41ad39146f589c894
+      internalID: -1949677772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_11
+      name: UrbanTheme_19
       rect:
         serializedVersion: 2
         x: 96
@@ -541,21 +717,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 63305410000000000800000000000000
-      internalID: 21300022
+      spriteID: d957ca2497cba66478f06de122290cda
+      internalID: 2035240569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_12
+      name: UrbanTheme_20
       rect:
         serializedVersion: 2
         x: 128
@@ -563,21 +739,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 83305410000000000800000000000000
-      internalID: 21300024
+      spriteID: 874cf736f7a64ed4089fd3a466d5adf9
+      internalID: -285679591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_13
+      name: UrbanTheme_21
       rect:
         serializedVersion: 2
         x: 160
@@ -585,21 +761,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a3305410000000000800000000000000
-      internalID: 21300026
+      spriteID: 7039a926c2b735340b8c39aec0e39ed5
+      internalID: 1148319987
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_14
+      name: UrbanTheme_22
       rect:
         serializedVersion: 2
         x: 192
@@ -607,21 +783,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c3305410000000000800000000000000
-      internalID: 21300028
+      spriteID: 7eb1b7dc851ccfd40897f03c102f65db
+      internalID: 1102208218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_15
+      name: UrbanTheme_23
       rect:
         serializedVersion: 2
         x: 224
@@ -629,21 +805,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e3305410000000000800000000000000
-      internalID: 21300030
+      spriteID: e0185488c0c2ca343bc641aa55524008
+      internalID: -1947420648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_16
+      name: UrbanTheme_24
       rect:
         serializedVersion: 2
         x: 0
@@ -651,21 +827,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 04305410000000000800000000000000
-      internalID: 21300032
+      spriteID: e74384c6792519443801e0f144e6284e
+      internalID: 598339682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_17
+      name: UrbanTheme_25
       rect:
         serializedVersion: 2
         x: 32
@@ -673,21 +849,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 24305410000000000800000000000000
-      internalID: 21300034
+      spriteID: c97c74dddd22e594f97a335c40b31d15
+      internalID: 1544183550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_18
+      name: UrbanTheme_26
       rect:
         serializedVersion: 2
         x: 64
@@ -695,21 +871,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 44305410000000000800000000000000
-      internalID: 21300036
+      spriteID: 0e76a411271ebd94499e29883f414a2e
+      internalID: 971428501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_19
+      name: UrbanTheme_27
       rect:
         serializedVersion: 2
         x: 96
@@ -717,21 +893,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 64305410000000000800000000000000
-      internalID: 21300038
+      spriteID: e9c0d628106d1f74dbffd0f198d44716
+      internalID: 1886453159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_20
+      name: UrbanTheme_28
       rect:
         serializedVersion: 2
         x: 128
@@ -739,21 +915,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 84305410000000000800000000000000
-      internalID: 21300040
+      spriteID: 8196a42a5e48d6746bbc45967018a15c
+      internalID: 1885020996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_21
+      name: UrbanTheme_29
       rect:
         serializedVersion: 2
         x: 160
@@ -761,21 +937,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a4305410000000000800000000000000
-      internalID: 21300042
+      spriteID: 688e74857383bae418b7dd340d32eeda
+      internalID: 1889085316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_22
+      name: UrbanTheme_30
       rect:
         serializedVersion: 2
         x: 192
@@ -783,21 +959,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c4305410000000000800000000000000
-      internalID: 21300044
+      spriteID: bc5a1f3664d7d344e8198113affef98c
+      internalID: -1363897403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_23
+      name: UrbanTheme_31
       rect:
         serializedVersion: 2
         x: 224
@@ -805,21 +981,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e4305410000000000800000000000000
-      internalID: 21300046
+      spriteID: 138e04af5d9b6e748a17e396829ad0e0
+      internalID: 742751240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_24
+      name: UrbanTheme_32
       rect:
         serializedVersion: 2
         x: 0
@@ -827,21 +1003,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 05305410000000000800000000000000
-      internalID: 21300048
+      spriteID: 8859a8d660d41dc4a924d9ad926a3cb6
+      internalID: 720976949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_25
+      name: UrbanTheme_33
       rect:
         serializedVersion: 2
         x: 32
@@ -849,21 +1025,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 25305410000000000800000000000000
-      internalID: 21300050
+      spriteID: 551c65fe16645124192aacb82098072a
+      internalID: 810990447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_26
+      name: UrbanTheme_34
       rect:
         serializedVersion: 2
         x: 64
@@ -871,21 +1047,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 45305410000000000800000000000000
-      internalID: 21300052
+      spriteID: 6d6d402b0173dce43a5bdeb83dc9a18f
+      internalID: 1195796098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_27
+      name: UrbanTheme_35
       rect:
         serializedVersion: 2
         x: 96
@@ -893,21 +1069,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 65305410000000000800000000000000
-      internalID: 21300054
+      spriteID: 9ab5bb2e58e160540bd5a3b8129cfde5
+      internalID: -235091135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_28
+      name: UrbanTheme_36
       rect:
         serializedVersion: 2
         x: 128
@@ -915,21 +1091,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 85305410000000000800000000000000
-      internalID: 21300056
+      spriteID: 55ea9c67e70bc794d85740c808eb7a27
+      internalID: 1338470550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_29
+      name: UrbanTheme_37
       rect:
         serializedVersion: 2
         x: 160
@@ -937,21 +1113,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a5305410000000000800000000000000
-      internalID: 21300058
+      spriteID: c40c3575adaf07c4098f055e86532099
+      internalID: -1401714386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_30
+      name: UrbanTheme_38
       rect:
         serializedVersion: 2
         x: 192
@@ -959,21 +1135,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c5305410000000000800000000000000
-      internalID: 21300060
+      spriteID: d43fba59a7783d740a2c7850a14e5407
+      internalID: 890435953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_31
+      name: UrbanTheme_39
       rect:
         serializedVersion: 2
         x: 224
@@ -981,21 +1157,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e5305410000000000800000000000000
-      internalID: 21300062
+      spriteID: c8c87c1f02d66eb4db2db0af235364e9
+      internalID: -2060937137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_32
+      name: UrbanTheme_40
       rect:
         serializedVersion: 2
         x: 0
@@ -1003,21 +1179,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 06305410000000000800000000000000
-      internalID: 21300064
+      spriteID: 645de5a153cefc8478f0cc6232d260c6
+      internalID: 1502222907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_33
+      name: UrbanTheme_41
       rect:
         serializedVersion: 2
         x: 32
@@ -1025,21 +1201,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 26305410000000000800000000000000
-      internalID: 21300066
+      spriteID: e82c238199fe0d947bf1f0cae1fbf3e2
+      internalID: -1703352102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_34
+      name: UrbanTheme_42
       rect:
         serializedVersion: 2
         x: 64
@@ -1047,21 +1223,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 46305410000000000800000000000000
-      internalID: 21300068
+      spriteID: 0f80581131cd7334c93dc80a6ef5042b
+      internalID: -1246155911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_35
+      name: UrbanTheme_43
       rect:
         serializedVersion: 2
         x: 96
@@ -1069,21 +1245,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 66305410000000000800000000000000
-      internalID: 21300070
+      spriteID: fd00b2a26fa36e84f9872dda02b466f0
+      internalID: -1189500218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_36
+      name: UrbanTheme_44
       rect:
         serializedVersion: 2
         x: 128
@@ -1091,21 +1267,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 86305410000000000800000000000000
-      internalID: 21300072
+      spriteID: f5f1ada24dfc3ec4894795ce8943d686
+      internalID: 1565977855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_37
+      name: UrbanTheme_45
       rect:
         serializedVersion: 2
         x: 160
@@ -1113,21 +1289,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a6305410000000000800000000000000
-      internalID: 21300074
+      spriteID: fa24150b3c2262e408d385bd26ac0907
+      internalID: 534372418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_38
+      name: UrbanTheme_46
       rect:
         serializedVersion: 2
         x: 192
@@ -1135,21 +1311,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c6305410000000000800000000000000
-      internalID: 21300076
+      spriteID: bef1130e09712b3498e0e0a976ed2194
+      internalID: 1137369813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_39
+      name: UrbanTheme_47
       rect:
         serializedVersion: 2
         x: 224
@@ -1157,21 +1333,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e6305410000000000800000000000000
-      internalID: 21300078
+      spriteID: 2af783c13d679d84698dd49c1bea54a5
+      internalID: -268763690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_40
+      name: UrbanTheme_48
       rect:
         serializedVersion: 2
         x: 0
@@ -1179,21 +1355,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 07305410000000000800000000000000
-      internalID: 21300080
+      spriteID: a58815258d8fb4143aeaf339833bf65f
+      internalID: -1455928747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_41
+      name: UrbanTheme_49
       rect:
         serializedVersion: 2
         x: 32
@@ -1201,21 +1377,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 27305410000000000800000000000000
-      internalID: 21300082
+      spriteID: f04a4220df48b3343b2be7ad56f23245
+      internalID: 1205858548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_42
+      name: UrbanTheme_50
       rect:
         serializedVersion: 2
         x: 64
@@ -1223,21 +1399,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 47305410000000000800000000000000
-      internalID: 21300084
+      spriteID: 1b9d0f9cedc6b134ab1140d17f0c106a
+      internalID: 552346414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_43
+      name: UrbanTheme_51
       rect:
         serializedVersion: 2
         x: 96
@@ -1245,21 +1421,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 67305410000000000800000000000000
-      internalID: 21300086
+      spriteID: e2ff46cbb4a36ae4eaafd59d6347d653
+      internalID: 1223594205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_44
+      name: UrbanTheme_52
       rect:
         serializedVersion: 2
         x: 128
@@ -1267,21 +1443,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 87305410000000000800000000000000
-      internalID: 21300088
+      spriteID: 233b453e0d518784389ab4cb4ba02273
+      internalID: 1141313001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_45
+      name: UrbanTheme_53
       rect:
         serializedVersion: 2
         x: 160
@@ -1289,21 +1465,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a7305410000000000800000000000000
-      internalID: 21300090
+      spriteID: 819b1640ad80ddc4094bcd05db79f880
+      internalID: -1550233249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_46
+      name: UrbanTheme_54
       rect:
         serializedVersion: 2
         x: 192
@@ -1311,21 +1487,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c7305410000000000800000000000000
-      internalID: 21300092
+      spriteID: d8477043940d14b4a95e78529ea710fe
+      internalID: 1368391003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_47
+      name: UrbanTheme_55
       rect:
         serializedVersion: 2
         x: 224
@@ -1333,21 +1509,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e7305410000000000800000000000000
-      internalID: 21300094
+      spriteID: 53290b23af646ca4d9893401c134ace7
+      internalID: 2051612726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_48
+      name: UrbanTheme_56
       rect:
         serializedVersion: 2
         x: 0
@@ -1355,21 +1531,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 08305410000000000800000000000000
-      internalID: 21300096
+      spriteID: 423cbe69aa3a4f34494b3f6d3423d4f9
+      internalID: 810093833
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_49
+      name: UrbanTheme_57
       rect:
         serializedVersion: 2
         x: 32
@@ -1377,21 +1553,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 28305410000000000800000000000000
-      internalID: 21300098
+      spriteID: a67336cdf1fa1e14884b03444ce3d52c
+      internalID: 1600065625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_50
+      name: UrbanTheme_58
       rect:
         serializedVersion: 2
         x: 64
@@ -1399,21 +1575,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 48305410000000000800000000000000
-      internalID: 21300100
+      spriteID: dfdd39d41a856204dac62e0483745692
+      internalID: 1094164489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_51
+      name: UrbanTheme_59
       rect:
         serializedVersion: 2
         x: 96
@@ -1421,21 +1597,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 68305410000000000800000000000000
-      internalID: 21300102
+      spriteID: 14489d9d4f9109e46bb02c0af0cd2eea
+      internalID: 852853048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_52
+      name: UrbanTheme_60
       rect:
         serializedVersion: 2
         x: 128
@@ -1443,21 +1619,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 88305410000000000800000000000000
-      internalID: 21300104
+      spriteID: 92a1958174fa48347847d862f36daa2f
+      internalID: 1153797878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_53
+      name: UrbanTheme_61
       rect:
         serializedVersion: 2
         x: 160
@@ -1465,21 +1641,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a8305410000000000800000000000000
-      internalID: 21300106
+      spriteID: 097e4ddd0900b7e429aeafcf90839e1a
+      internalID: 1436640291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scavengers_SpriteSheet_54
+      name: UrbanTheme_62
       rect:
         serializedVersion: 2
         x: 192
@@ -1487,37 +1663,15 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c8305410000000000800000000000000
-      internalID: 21300108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Scavengers_SpriteSheet_55
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e8305410000000000800000000000000
-      internalID: 21300110
+      spriteID: e4db096dd713b4f45b61f3983bfffbd0
+      internalID: 1379252545
       vertices: []
       indices: 
       edges: []
@@ -1526,7 +1680,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0558ac10f542ba247a18b6949396003f
     internalID: 0
     vertices: []
     indices: 
@@ -1534,64 +1688,73 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Scavengers_SpriteSheet_0: 21300000
-      Scavengers_SpriteSheet_1: 21300002
-      Scavengers_SpriteSheet_10: 21300020
-      Scavengers_SpriteSheet_11: 21300022
-      Scavengers_SpriteSheet_12: 21300024
-      Scavengers_SpriteSheet_13: 21300026
-      Scavengers_SpriteSheet_14: 21300028
-      Scavengers_SpriteSheet_15: 21300030
-      Scavengers_SpriteSheet_16: 21300032
-      Scavengers_SpriteSheet_17: 21300034
-      Scavengers_SpriteSheet_18: 21300036
-      Scavengers_SpriteSheet_19: 21300038
-      Scavengers_SpriteSheet_2: 21300004
-      Scavengers_SpriteSheet_20: 21300040
-      Scavengers_SpriteSheet_21: 21300042
-      Scavengers_SpriteSheet_22: 21300044
-      Scavengers_SpriteSheet_23: 21300046
-      Scavengers_SpriteSheet_24: 21300048
-      Scavengers_SpriteSheet_25: 21300050
-      Scavengers_SpriteSheet_26: 21300052
-      Scavengers_SpriteSheet_27: 21300054
-      Scavengers_SpriteSheet_28: 21300056
-      Scavengers_SpriteSheet_29: 21300058
-      Scavengers_SpriteSheet_3: 21300006
-      Scavengers_SpriteSheet_30: 21300060
-      Scavengers_SpriteSheet_31: 21300062
-      Scavengers_SpriteSheet_32: 21300064
-      Scavengers_SpriteSheet_33: 21300066
-      Scavengers_SpriteSheet_34: 21300068
-      Scavengers_SpriteSheet_35: 21300070
-      Scavengers_SpriteSheet_36: 21300072
-      Scavengers_SpriteSheet_37: 21300074
-      Scavengers_SpriteSheet_38: 21300076
-      Scavengers_SpriteSheet_39: 21300078
-      Scavengers_SpriteSheet_4: 21300008
-      Scavengers_SpriteSheet_40: 21300080
-      Scavengers_SpriteSheet_41: 21300082
-      Scavengers_SpriteSheet_42: 21300084
-      Scavengers_SpriteSheet_43: 21300086
-      Scavengers_SpriteSheet_44: 21300088
-      Scavengers_SpriteSheet_45: 21300090
-      Scavengers_SpriteSheet_46: 21300092
-      Scavengers_SpriteSheet_47: 21300094
-      Scavengers_SpriteSheet_48: 21300096
-      Scavengers_SpriteSheet_49: 21300098
-      Scavengers_SpriteSheet_5: 21300010
-      Scavengers_SpriteSheet_50: 21300100
-      Scavengers_SpriteSheet_51: 21300102
-      Scavengers_SpriteSheet_52: 21300104
-      Scavengers_SpriteSheet_53: 21300106
-      Scavengers_SpriteSheet_54: 21300108
-      Scavengers_SpriteSheet_55: 21300110
-      Scavengers_SpriteSheet_6: 21300012
-      Scavengers_SpriteSheet_7: 21300014
-      Scavengers_SpriteSheet_8: 21300016
-      Scavengers_SpriteSheet_9: 21300018
+      UrbanTheme_0: -1172727258
+      UrbanTheme_1: 141704279
+      UrbanTheme_10: 349427601
+      UrbanTheme_11: -1051825808
+      UrbanTheme_12: 886052069
+      UrbanTheme_13: -449814489
+      UrbanTheme_14: 1978079270
+      UrbanTheme_15: 1299396706
+      UrbanTheme_16: -719778838
+      UrbanTheme_17: 1095334354
+      UrbanTheme_18: -1949677772
+      UrbanTheme_19: 2035240569
+      UrbanTheme_2: -1047603973
+      UrbanTheme_20: -285679591
+      UrbanTheme_21: 1148319987
+      UrbanTheme_22: 1102208218
+      UrbanTheme_23: -1947420648
+      UrbanTheme_24: 598339682
+      UrbanTheme_25: 1544183550
+      UrbanTheme_26: 971428501
+      UrbanTheme_27: 1886453159
+      UrbanTheme_28: 1885020996
+      UrbanTheme_29: 1889085316
+      UrbanTheme_3: 647339875
+      UrbanTheme_30: -1363897403
+      UrbanTheme_31: 742751240
+      UrbanTheme_32: 720976949
+      UrbanTheme_33: 810990447
+      UrbanTheme_34: 1195796098
+      UrbanTheme_35: -235091135
+      UrbanTheme_36: 1338470550
+      UrbanTheme_37: -1401714386
+      UrbanTheme_38: 890435953
+      UrbanTheme_39: -2060937137
+      UrbanTheme_4: -330475852
+      UrbanTheme_40: 1502222907
+      UrbanTheme_41: -1703352102
+      UrbanTheme_42: -1246155911
+      UrbanTheme_43: -1189500218
+      UrbanTheme_44: 1565977855
+      UrbanTheme_45: 534372418
+      UrbanTheme_46: 1137369813
+      UrbanTheme_47: -268763690
+      UrbanTheme_48: -1455928747
+      UrbanTheme_49: 1205858548
+      UrbanTheme_5: -729741786
+      UrbanTheme_50: 552346414
+      UrbanTheme_51: 1223594205
+      UrbanTheme_52: 1141313001
+      UrbanTheme_53: -1550233249
+      UrbanTheme_54: 1368391003
+      UrbanTheme_55: 2051612726
+      UrbanTheme_56: 810093833
+      UrbanTheme_57: 1600065625
+      UrbanTheme_58: 1094164489
+      UrbanTheme_59: 852853048
+      UrbanTheme_6: 2031567649
+      UrbanTheme_60: 1153797878
+      UrbanTheme_61: 1436640291
+      UrbanTheme_62: 1379252545
+      UrbanTheme_7: -1603296418
+      UrbanTheme_8: 1370273396
+      UrbanTheme_9: -978139270
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

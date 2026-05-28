@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c94689d0b9c0fe438d8364a78278f1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleObject
-  obstacleTile: {fileID: 11400000, guid: 85e338274bab74d4bb4f5e8492b78999, type: 2}
-  damageTile: {fileID: 11400000, guid: c5d7f5566c0a5124a9e44ec9b48bec68, type: 2}
+  obstacleTile: {fileID: 11400000, guid: d021360f8399d264a93c52cd339c02a5, type: 2}
+  damageTile: {fileID: 11400000, guid: 640349a2bc64f66488f61b8ab83c6018, type: 2}
   maxHealth: 25

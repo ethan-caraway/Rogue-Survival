@@ -203,17 +203,17 @@ MonoBehaviour:
   grid: {fileID: 449649550}
   dimensions: {x: 8, y: 8}
   groundTiles:
-  - {fileID: 11400000, guid: 634ab84e3cbe93c44a34a196ad14dfe1, type: 2}
-  - {fileID: 11400000, guid: d396593ee52c1cb41aa81c1840b0c800, type: 2}
-  - {fileID: 11400000, guid: 623e7f5416c8cda498e0433d48dd538e, type: 2}
-  - {fileID: 11400000, guid: 19a55a63b6ca785458ceef3ced9ea717, type: 2}
-  - {fileID: 11400000, guid: 61ed88fdfe3a5bf46b9e65102253bffb, type: 2}
-  - {fileID: 11400000, guid: afc8ea81904257b4e8ae5245d17a643f, type: 2}
-  - {fileID: 11400000, guid: 6a0f260169534af4297df5b79b932a8f, type: 2}
-  - {fileID: 11400000, guid: 4ffa9f78a17b09b4f979246ad5522933, type: 2}
+  - {fileID: 11400000, guid: fbfa6b0cd2ee2e143b1f283204c73b32, type: 2}
+  - {fileID: 11400000, guid: 9fd16d1f6af9d4b4f8ea3f77b605a474, type: 2}
+  - {fileID: 11400000, guid: 36c63c3e5aea62c45b8022d4adf62e2b, type: 2}
+  - {fileID: 11400000, guid: 17682add0a2347445b6a62d8ff2c0f9a, type: 2}
+  - {fileID: 11400000, guid: 93b7ac3f528d32346bacc603d61e5aeb, type: 2}
+  - {fileID: 11400000, guid: d2e223f388c923e4aa9844e36ac0c0de, type: 2}
+  - {fileID: 11400000, guid: f8301ec1c4f0f8e46b4cb0eb37043124, type: 2}
+  - {fileID: 11400000, guid: f3e106fb82ca983488851163ebae1452, type: 2}
   wallTiles:
-  - {fileID: 11400000, guid: 00b7b31b095a24e4b8d09d1e1006db4b, type: 2}
-  - {fileID: 11400000, guid: c1f6a614ebf2aad4591befd054b1bb10, type: 2}
+  - {fileID: 11400000, guid: e9ca9f2041392984aaf31e0cb6e0c3a0, type: 2}
+  - {fileID: 11400000, guid: 02eddbf27f3d66042a902a5ce8ac48c4, type: 2}
   exitPrefab: {fileID: -7229921921157617699, guid: 8cc0ed0656e4a7049a25b8b285c2ec7c, type: 3}
   foodPrefabs:
   - {fileID: 8234969162708401041, guid: d4631b6e71df49a4383ac4d3966e6ad7, type: 3}
@@ -917,6 +917,7 @@ GameObject:
   - component: {fileID: 2128236188}
   - component: {fileID: 2128236187}
   - component: {fileID: 2128236186}
+  - component: {fileID: 2128236190}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1105,7 +1106,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: fbe1e7b94bb1a4a099d5bcb15a00141c, type: 3}
+  m_Sprite: {fileID: -1172727258, guid: fbe1e7b94bb1a4a099d5bcb15a00141c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1130,6 +1131,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2128236190
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128236185}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e5985ccc4c097c944a1a6a01048a2cb2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &6484553589818795852
 PrefabInstance:
   m_ObjectHideFlags: 0

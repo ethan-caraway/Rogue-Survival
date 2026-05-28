@@ -44,4 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e404d1d7cd996a40a322bb1db99cfc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExitCellObject
-  exitTile: {fileID: 11400000, guid: 76c2c18b0c43e964a8cd25cc42e0f445, type: 2}
+  exitTile: {fileID: 11400000, guid: 312252ae0e263954fafd503098525f67, type: 2}
+  Mediator: {fileID: 0}
