@@ -105,4 +105,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodObject
   healthGain: 7
-  speedGain: 0
+  energyGain: 4

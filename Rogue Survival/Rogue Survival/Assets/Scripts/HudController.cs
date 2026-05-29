@@ -27,9 +27,9 @@ public class HudController : MonoBehaviour
 	[SerializeField]
 	private TMP_Text healthText;
 
-	// The text element for displaying the player's speed stat
+	// The text element for displaying the player's energy stat
 	[SerializeField]
-	private TMP_Text speedText;
+	private TMP_Text energyText;
 
 	// The text element for displaying the player's attack stat
 	[SerializeField]
@@ -127,28 +127,28 @@ public class HudController : MonoBehaviour
 		// Display the player's current health
 		healthText.text = $"{PlayerController.Stats.CurrentHealth}/{PlayerController.Stats.MaxHealth}";
 
-		// Get the current speed color
+		// Get the current energy color
 		string currentSpeedColor = "white";
 
-		// Check for increased current speed
-		if ( PlayerController.Stats.CurrentSpeed > PlayerController.Stats.MaxSpeed )
+		// Check for increased current energy
+		if ( PlayerController.Stats.CurrentEnergy > PlayerController.Stats.MaxEnergy )
 		{
-			// Make current speed green
+			// Make current energy green
 			currentSpeedColor = $"#{ColorUtility.ToHtmlStringRGB ( speedColor )}";
 		}
 
-		// Get the max speed color
+		// Get the max energy color
 		string maxSpeedColor = "white";
 
-		// Check for lowered speed
-		if ( PlayerController.Stats.MaxSpeed < PlayerController.Stats.InitialMaxSpeed )
+		// Check for lowered energy
+		if ( PlayerController.Stats.MaxEnergy < PlayerController.Stats.InitialMaxEnergy )
 		{
-			// Make max speed red
+			// Make max energy red
 			maxSpeedColor = "red";
 		}
 
-		// Display the player's current speed energy
-		speedText.text = $"<color={currentSpeedColor}>{PlayerController.Stats.CurrentSpeed}</color>/<color={maxSpeedColor}>{PlayerController.Stats.MaxSpeed}</color>";
+		// Display the player's current energy
+		energyText.text = $"<color={currentSpeedColor}>{PlayerController.Stats.CurrentEnergy}</color>/<color={maxSpeedColor}>{PlayerController.Stats.MaxEnergy}</color>";
 
 		// Check for lowered attack
 		if ( PlayerController.Stats.Attack < PlayerController.Stats.InitialAttack )

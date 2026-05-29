@@ -104,5 +104,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e09333e6895db449eaac2e57f0dfb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodObject
-  healthGain: 10
-  speedGain: -1
+  healthGain: 8
+  energyGain: 0

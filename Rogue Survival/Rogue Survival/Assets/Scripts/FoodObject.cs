@@ -6,7 +6,7 @@ public class FoodObject : CellObject
 	private int healthGain;
 
 	[SerializeField]
-	private int speedGain;
+	private int energyGain;
 
 	// FoodObject.PlayerEntered is called when the player enters a cell with food in it
 	public override void PlayerEntered ( )
@@ -14,8 +14,8 @@ public class FoodObject : CellObject
 		// Gain health for the player
 		PlayerController.Stats.CurrentHealth += healthGain;
 
-		// Gain speed energy for the player
-		PlayerController.Stats.CurrentSpeed += speedGain;
+		// Gain energy for the player
+		PlayerController.Stats.CurrentEnergy += energyGain;
 
 		// Destroy the food
 		Destroy ( gameObject );

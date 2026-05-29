@@ -3,16 +3,16 @@ using UnityEngine;
 public class PlayerData
 {
 	// PlayerData is a constructor for the PlayerData class
-	public PlayerData ( int health, int speed, int attack )
+	public PlayerData ( int health, int energy, int attack )
 	{
 		// Set the health stat
 		MaxHealth = health;
 		CurrentHealth = health;
 
 		// Set the speed stat
-		InitialMaxSpeed = speed;
-		MaxSpeed = speed;
-		CurrentSpeed = speed;
+		InitialMaxEnergy = energy;
+		MaxEnergy = energy;
+		CurrentEnergy = energy;
 
 		// Set the attack stat
 		InitialAttack = attack;
@@ -22,8 +22,8 @@ public class PlayerData
 	// The current amount of health the player has
 	public int CurrentHealth;
 
-	// The current counter for the speed stat the player has
-	public int CurrentSpeed;
+	// The current counter for the energy stat the player has
+	public int CurrentEnergy;
 
 	// The maximum amount of health the player can have
 	public int MaxHealth
@@ -32,15 +32,15 @@ public class PlayerData
 		private set;
 	}
 
-	// The initial maximum counter for the speed stat the player can have
-	public int InitialMaxSpeed
+	// The initial maximum counter for the energy stat the player can have
+	public int InitialMaxEnergy
 	{
 		get;
 		private set;
 	}
 
-	// The maximum counter for the speed stat the player can have 
-	public int MaxSpeed
+	// The maximum counter for the energy stat the player can have 
+	public int MaxEnergy
 	{
 		get;
 		private set;
@@ -60,18 +60,18 @@ public class PlayerData
 		private set;
 	}
 
-	// ModifySpeed is used to modify the player's current max speed stat
-	public void ModifySpeed ( int speedDelta )
+	// ModifyEnergy is used to modify the player's current max energy stat
+	public void ModifyEnergy ( int energyDelta )
 	{
-		// Change the current max speed
-		// Ensure a max speed of at least 1
-		MaxSpeed = Mathf.Max ( 1, MaxSpeed + speedDelta );
+		// Change the current max energy
+		// Ensure a max energy of at least 1
+		MaxEnergy = Mathf.Max ( 1, MaxEnergy + energyDelta );
 
-		// Check if the current speed exceeds the new max speed
-		if ( CurrentSpeed > MaxSpeed )
+		// Check if the current energy exceeds the new max speed
+		if ( CurrentEnergy > MaxEnergy )
 		{
-			// Change the current speed to reflect the change in max speed
-			CurrentSpeed = Mathf.Max ( 1, CurrentSpeed + speedDelta );
+			// Change the current energy to reflect the change in max energy
+			CurrentEnergy = Mathf.Max ( 1, CurrentEnergy + energyDelta );
 		}
 	}
 

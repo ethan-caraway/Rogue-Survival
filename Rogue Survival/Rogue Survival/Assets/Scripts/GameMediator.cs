@@ -102,7 +102,7 @@ public class GameMediator : MonoBehaviour
 		else if ( CurrentLevel == ( LEVELS_PER_ENVIRONMENT * 2 ) + 1 )
 		{
 			// Lower the player's speed
-			PlayerController.Stats.ModifySpeed ( -1 );
+			PlayerController.Stats.ModifyEnergy ( -1 );
 
 			// Load the snow level
 			SceneManager.LoadScene ( SNOW_SCENE );
