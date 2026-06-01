@@ -3,11 +3,22 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+	// The list of animation states for the player
+	private enum PlayerState
+	{
+		IDLE,
+		MOVE,
+		ATTACK
+	}
+
 	// The name of the move action
 	private const string MOVE_ACTION = "Move";
 
-	// The name of the IsMoving animator parameter
+	// The name of the IsMoving animation parameter
 	private const string MOVE_ANIM_PARAMETER = "IsMoving";
+
+	// The name of the Attack animation parameter
+	private const string ATTACK_ANIM_PARAMETER = "Attack";
 
 	// The mediator for the game
 	[SerializeField]
@@ -41,8 +52,8 @@ public class PlayerController : MonoBehaviour
 	// The move action
 	private InputAction moveAction;
 
-	// Whether or not the character is currently moving to a new cell
-	private bool isMoving = false;
+	// The animation state the player is currently in
+	private PlayerState state = PlayerState.IDLE;
 
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start ( )
@@ -54,47 +65,22 @@ public class PlayerController : MonoBehaviour
 	// Update is called once per frame
 	void Update ( )
 	{
-		// Check if the player is moving toward a cell
-		if ( isMoving )
+		// Check the current state
+		switch ( state )
 		{
-			// Get the target position
-			Vector3 targetPosition = board.GetCellPosition ( cellPosition );
-
-			// Move the player toward the cell
-			transform.position = Vector3.MoveTowards ( transform.position, targetPosition, moveSpeed * Time.deltaTime );
-
-			// Check if the player has reached the cell
-			if ( transform.position == targetPosition )
-			{
-				// Mark that the player is no longer moving
-				isMoving = false;
-
-				// End the walk animation
-				animator.SetBool ( MOVE_ANIM_PARAMETER, isMoving );
-
-				// Get the data for the target cell to move to
-				CellData cellData = board.GetCellData ( cellPosition );
-
-				// Check for an object in the cell
-				if ( cellData.ContainedObject != null )
+			case PlayerState.IDLE:
+				// Check for on key down
+				if ( mediator.IsGameRunning && moveAction.WasPressedThisFrame ( ) )
 				{
-					// Trigger the player entering the cell of the object
-					cellData.ContainedObject.PlayerEntered ( );
+					// Move the player
+					Move ( moveAction.ReadValue<Vector2> ( ) );
 				}
+				break;
 
-				// End the turn after the animation has completed
-				EndTurn ( );
-			}
-
-			// End the function to prevent input
-			return;
-		}
-
-		// Check for on key down
-		if ( mediator.IsGameRunning && moveAction.WasPressedThisFrame ( ) )
-		{
-			// Move the player
-			Move ( moveAction.ReadValue<Vector2> ( ) );
+			case PlayerState.MOVE:
+				// Move the player toward the cell
+				AnimateMove ( );
+				break;
 		}
 	}
 
@@ -108,14 +94,21 @@ public class PlayerController : MonoBehaviour
 		MoveToCell ( cell, true );
 	}
 
+	// OnAttackComplete is called when the attack animation completes
+	public void OnAttackComplete ( )
+	{
+		// Reset the player state
+		state = PlayerState.IDLE;
+
+		// End the player's current turn
+		EndTurn ( );
+	}
+
 	// MoveToCell is called to position the player to a given cell
 	private void MoveToCell ( Vector2Int cell, bool isImmediate )
 	{
 		// Store the cell coordinates
 		cellPosition = cell;
-
-		// Mark if the user is moving over time to the cell
-		isMoving = !isImmediate;
 
 		// Check for moving to the cell immediately
 		if ( isImmediate )
@@ -123,9 +116,14 @@ public class PlayerController : MonoBehaviour
 			// Position player to the cell
 			transform.position = board.GetCellPosition ( cellPosition );
 		}
+		else
+		{
+			// Set the player's state to moving
+			state = PlayerState.MOVE;
 
-		// Trigger the walk animation
-		animator.SetBool ( MOVE_ANIM_PARAMETER, isMoving );
+			// Trigger the walk animation
+			animator.SetBool ( MOVE_ANIM_PARAMETER, true );
+		}
 	}
 
 	// Move is call when the Move action is triggered on key press
@@ -154,17 +152,58 @@ public class PlayerController : MonoBehaviour
 			}
 
 			// Check for an object in the cell
-			if ( cellData.ContainedObject == null || cellData.ContainedObject.CanPlayerEnter ( ) )
+			if ( cellData.ContainedObject == null )
 			{
 				// Move the player to the new cell
 				MoveToCell ( cellPosition + moveInput, false );
 			}
-
-			// End the turn if not animating
-			if ( !isMoving )
+			// Check if the player is allowed to move to the cell with an object
+			else if ( cellData.ContainedObject.CanPlayerEnter ( ) )
 			{
-				EndTurn ( );
+				// Move the player to the new cell
+				MoveToCell ( cellPosition + moveInput, false );
 			}
+			else
+			{
+				// Mark that the player is attacking the cell object
+				state = PlayerState.ATTACK;
+
+				// Play the attack animation
+				animator.SetTrigger ( ATTACK_ANIM_PARAMETER );
+			}
+		}
+	}
+
+	// AnimateMove is called to animate the player walking toward a cell
+	private void AnimateMove ( )
+	{
+		// Get the target position
+		Vector3 targetPosition = board.GetCellPosition ( cellPosition );
+
+		// Move the player toward the cell
+		transform.position = Vector3.MoveTowards ( transform.position, targetPosition, moveSpeed * Time.deltaTime );
+
+		// Check if the player has reached the cell
+		if ( transform.position == targetPosition )
+		{
+			// Mark that the player is no longer moving
+			state = PlayerState.IDLE;
+
+			// End the walk animation
+			animator.SetBool ( MOVE_ANIM_PARAMETER, false );
+
+			// Get the data for the target cell to move to
+			CellData cellData = board.GetCellData ( cellPosition );
+
+			// Check for an object in the cell
+			if ( cellData.ContainedObject != null )
+			{
+				// Trigger the player entering the cell of the object
+				cellData.ContainedObject.PlayerEntered ( );
+			}
+
+			// End the turn after the animation has completed
+			EndTurn ( );
 		}
 	}
 

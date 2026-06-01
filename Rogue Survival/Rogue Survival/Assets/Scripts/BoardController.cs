@@ -40,6 +40,10 @@ public class BoardController : MonoBehaviour
 	[SerializeField]
 	private ObstacleObject [ ] obstaclePrefabs;
 
+	// The list of prefabs of enemies to spawn on the board
+	[SerializeField]
+	private EnemyObject [ ] enemyPrefabs;
+
 	// The amount of food to spawn on the board
 	[SerializeField]
 	private int foodCount;
@@ -51,6 +55,14 @@ public class BoardController : MonoBehaviour
 	// The maximum amount of obstacles to spawn on the board
 	[SerializeField]
 	private int maxObstacleCount;
+
+	// The minimum amount of enemies to spawn on the board
+	[SerializeField]
+	private int minEnemyCount;
+
+	// The maximum amount of enemies to spawn on the board
+	[SerializeField]
+	private int maxEnemyCount;
 
 	// The data for each cell in the board
 	private CellData [ , ] boardData;
@@ -131,6 +143,9 @@ public class BoardController : MonoBehaviour
 
 		// Populate the board with food
 		GenerateFood ( );
+
+		// Populate the board with enemies
+		GenerateEnemies ( );
 	}
 
 	// Clean is used to reset the board and delete any excess objects
@@ -173,6 +188,16 @@ public class BoardController : MonoBehaviour
 
 		// Increment maximum obstacles
 		maxObstacleCount++;
+	}
+
+	// IncreaseEnemies is used to increase the total amount of enemies generated
+	public void IncreaseEnemies ( )
+	{
+		// Increment minimum enemies
+		minEnemyCount++;
+
+		// Increment maximum enemies
+		maxEnemyCount++;
 	}
 
 	// GetCellPosition is used to get the world space position of a cell by its coordinates
@@ -290,6 +315,39 @@ public class BoardController : MonoBehaviour
 
 			// Add new object to the board
 			AddObject ( food, coordinates );
+		}
+	}
+
+	// GenerateEnemies is used to procedurally generate enemies on the board
+	private void GenerateEnemies ( )
+	{
+		// Get amount of enemies to generate
+		int enemyCount = Random.Range ( minEnemyCount, maxEnemyCount );
+
+		// Generate each enemy
+		for ( int i = 0; i < enemyCount; i++ )
+		{
+			// Check for empty cells
+			if ( emptyCells.Count < 1 )
+			{
+				// End generation
+				return;
+			}
+
+			// Get random coordinates
+			Vector2Int coordinates = emptyCells [ Random.Range ( 0, emptyCells.Count ) ];
+
+			// Remove coordinates from the list of available cells
+			emptyCells.Remove ( coordinates );
+
+			// Get random enemy prefab
+			EnemyObject prefab = enemyPrefabs [ Random.Range ( 0, enemyPrefabs.Length ) ];
+
+			// Spawn an instance of the enemy
+			EnemyObject enemy = Instantiate ( prefab );
+
+			// Add new object to the board
+			AddObject ( enemy, coordinates );
 		}
 	}
 }

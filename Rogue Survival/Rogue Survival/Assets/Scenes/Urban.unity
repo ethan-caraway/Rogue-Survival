@@ -227,9 +227,13 @@ MonoBehaviour:
   - {fileID: 1292778943058864447, guid: bd14d06346f351c47b8c6ab71f24bf77, type: 3}
   - {fileID: 1292778943058864447, guid: 0545b797acc087041a0555216bf82054, type: 3}
   - {fileID: 1292778943058864447, guid: 4eb3881d7848adb4e81d141288c3acd5, type: 3}
+  enemyPrefabs:
+  - {fileID: 6875927602373513236, guid: b47fe53e32f3cbe4182f0fa0f9e21554, type: 3}
   foodCount: 2
   minObstacleCount: 4
   maxObstacleCount: 10
+  minEnemyCount: 0
+  maxEnemyCount: 2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

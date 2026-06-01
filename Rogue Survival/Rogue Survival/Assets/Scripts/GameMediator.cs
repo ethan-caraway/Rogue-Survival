@@ -128,6 +128,13 @@ public class GameMediator : MonoBehaviour
 				board.IncreaseObstacles ( );
 			}
 
+			// Check for every fifth level
+			if ( CurrentLevel % 5 == 0 )
+			{
+				// Increase the amount of obstacles
+				board.IncreaseEnemies ( );
+			}
+
 			// Reset the turns
 			hud.UpdateHUD ( 1 );
 
